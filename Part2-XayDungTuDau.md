@@ -72,7 +72,7 @@ Chúng ta cũng thêm vào các thuộc tính inline style như "border-collapse
 
 ## Tạo sườn và Header
 
-Trong bản thiết kế, ta thấy email được chia làm ba phần, do đó, ta sẽ tạo mỗi phần là một hàng (row).
+Trong bản thiết kế, ta thấy email được chia làm ba phần (Header, Content, Footer), do đó, ta sẽ tạo mỗi phần là một hàng (row).
 
 Chúng ta sẽ copy paste cái row của cái bảng vừa nãy mới làm thành ba phần. Mình đã thêm vào các chữ ở mỗi row để các bạn dễ phân biệt
 
@@ -127,5 +127,48 @@ OK, tiếp theo ta sẽ tập trung vào row 1. Chúng ta sẽ tuỳ chỉnh pad
 
 Khi sử dụng padding trong email, bạn phải luôn khai báo đầy đủ tất cả các giá trị (top, right, bottom, left) nếu không có thể sẽ bị lỗi. Chúng ta có thể sử dụng cách shorthand, ví dụ: `padding: 10px 10px 8px 5px;`, tuy nhiên, nếu gặp vấn đề gì đó bạn nên viết lại dưới dạng longform, ví dụ: `padding-top: 10px; padding-right: 10px; padding-bottom: 8px; padding-left: 5px;`.
 
- 
+Nếu bạn vẫn gặp vấn đề về padding, đừng sử dụng nó nữa. Bạn chỉ cần sử dụng các cell trống để tạo các khoảng trống. Bạn cũng không cần sử dụng các "spacer GIF" để tạo khoảng trắng =], chỉ cần chắc chắn là bạn thêm style sau vào cell `style="line-height: 0; font-size: 0;"`, đặt `&nbsp`(Non-breaking Space) vào giữa 2 tag, và khai báo height hoặc width cho nó. Ví dụ:
 
+`<tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr>`
+
+
+Bạn cũng cần chú ý rằng, sẽ an toàn hơn khi sử dụng padding cho TD tag thay vì tag p hay là div.
+
+Chúng ta đã sử dụng inline CSS để thêm padding vào cell. Tiếp theo, chúng ta sẽ bắt đầu thêm hình vào, sử dụng thuộc tính alt và  thêm vào `style="display:block;"`. Những thứ này sẽ giúp ngăn các email client thêm các khoảng trống bên dưới hình của bạn. Tiếp tục, chúng ta sẽ canh giữa hình bằng thuộc tính `align="center"`. Việc thêm thuộc tính alt cũng khá quan trọng, khi mail của chúng ta đang được load thì nếu image chưa load xong nó sẽ hiện alt text, giúp cho người đọc biết rằng chỗ đó sẽ có một bức hình.
+
+**Chú ý:** Nếu phần nội dung trong header có vai trò quan trọng trong tin nhắn, đừng nên sử dụng một header chỉ có hình ảnh. Bạn nên nhớ rằng các email client thường block hình ảnh, cho nên nếu nội dung chỗ đó quan trọng thì đừng nên bỏ nó vào hinh ảnh. Tuy nhiên ở ví dụ sau thì mình chỉ sử dụng hình ảnh cho header.
+```
+<td align="center" bgcolor="#70bbd9" style="padding: 40px 0 30px 0;">
+ <img src="images/h1.gif" alt="Creating Email Magic" width="300" height="230" style="display: block;" />
+</td>
+```
+
+![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/6.jpg)
+
+## Tạo phần Content
+Đầu tiên, chúng ta sẽ thêm vào một chút padding ở cell giữa để tạo khoảng trống xung quanh element.
+![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/7.jpg)
+
+Tiếp theo, ta sẽ thay cái chữ Row 2 thành một cái table với 3 row. Những row này sẽ chứa nội dung chính của ta - một cho headline, một cho phần chữ giới thiệu và ta sẽ chia cái dòng cuối thành 2 cột. Chúng ta sẽ set chiều rộng của table thành 100%, chúng ta không sử dụng pixel vì sử dụng % sẽ giúp chúng ta tạo một email responsive dễ hơn. Nếu bạn sử dụng sử dụng pixel cho width với mọi element, nó có thể dẫn đến việc bạn phải thay đổi các giá trị này một cách liên tục, còn khi sử dụng % để set width cho table con, thì khi bạn muốn điều chỉnh width cho các element cha, các table con lúc này cũng sẽ được tùy chỉnh lại một cách tự động.
+
+```
+<td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
+ <table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+   <td>
+    Row 1
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Row 2
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Row 3
+   </td>
+  </tr>
+ </table>
+</td>
+```
