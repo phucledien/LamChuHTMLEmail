@@ -172,3 +172,51 @@ Tiếp theo, ta sẽ thay cái chữ Row 2 thành một cái table với 3 row. 
  </table>
 </td>
 ```
+
+![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/8.jpg)
+
+OK, bây giờ ta sẽ thêm nội dung vào, đồng thời thêm một chút padding vào cell giữa.
+
+![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/9.jpg)
+
+```
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+ <tr>
+  <td>
+   Lorem ipsum dolor sit amet!
+  </td>
+ </tr>
+ <tr>
+  <td style="padding: 20px 0 30px 0;">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Row 3
+  </td>
+ </tr>
+</table>
+```
+
+Giờ chúng ta sẽ chia row 3 thành 2 cột. Mình muốn 2 cột này sẽ cách nhau một khoảng. Bình thường ta sẽ sử dụng margin, tuy nhiên trong HTML Email thì margin không được hỗ trợ. Vì vậy chúng ta sẽ tạo thêm một cột trống ở giữa 2 cột ngoài cùng.
+
+Nãy mình nói là chúng ta nên sử dụng % để set width, nhưng mà bây giờ nội dung của ta sẽ có size cố định, do đó nếu chúng ta để % thì có lẽ hơi khó. Ở đây, 2 bức hình của ta có width là 260px, chúng ta sẽ set 2 cột tương ứng với width cũng là 260px, còn cột trống ở giữa chúng ta sẽ để là 20px. Hãy chắc chắn rằng bằng để font-size = 0, line-height = 0 cho cell giữa đồng thời chèn vào nó kí hiệu non-breaking space `&nbsp;`.
+
+Chúng ta cũng sẽ set thuộc tính `valign` với giá trị `"top"` cho cả 2 cell ở biên, để giúp content ở hai cell này luôn nằm ở phía trên cùng. Giá trị mặc định của thuộc tính này là `"middle"`.
+
+```
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+ <tr>
+  <td width="260" valign="top">
+   Column 1
+  </td>
+  <td style="font-size: 0; line-height: 0;" width="20">
+   &nbsp;
+  </td>
+  <td width="260" valign="top">
+   Column 2
+  </td>
+ </tr>
+</table>
+```
