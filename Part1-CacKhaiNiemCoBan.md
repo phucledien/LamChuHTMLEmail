@@ -81,7 +81,7 @@ Thuật ngữ SPAM scores khá là khó nhằn. Để chắc chắn rằng mail 
 #### Công cụ
 Bạn có thể sử dụng text editor mà bạn thích (mình sử dụng Sublime Text) và một công cụ để test, bạn có thể sử dụng của Litmus hay Email on Acid. 
 
-#### Khái niệm căn bản
+#### Nắm vững căn bản
 Chúng ta sẽ đi từ đầu. Các framework như [HTML Email Boilerplate](http://htmlemailboilerplate.com) có khá nhiều trick hay và các đoạn snippet mà bạn có kể implement một cách dễ dàng. Tuy nhiên, nếu bạn mới bắt đầu thì bạn không nên sử dụng nó ngay. Bởi vì nó chứa khá nhiều thứ không cần thiết cho bạn. Điều này có thể gây khó khăn thêm với bạn khi sửa một lỗi nào đó.
 
 **Chú ý:** Bởi vì độ khó của viêc này, nhất là đối với việc sửa các lỗi. Bạn không nên sử dụng một cái editor nào đó mà quảng cáo rằng sẽ format design của bạn và bụp phát biến nó thành code HTML cho Email. Họ đang xạo đó =]
