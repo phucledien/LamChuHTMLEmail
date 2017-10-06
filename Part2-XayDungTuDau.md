@@ -48,7 +48,7 @@ Tiếp theo, ta sẽ set cellpadding và cellspacing của các ô table (cell) 
 </body>
 ```
 
-![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/1.jpg)
+![example1](https://cdn.tutsplus.com/webdesign/uploads/2013/06/1.jpg)
 
 > Nếu các thuộc tính có sẵn trên HTML thì chúng ta nên sử dụng chúng thay vì sử dụng CSS
 
@@ -68,7 +68,7 @@ Chúng ta sẽ thay cái chữ "Hello!" nhỏ nhỏ ở cái main table với đ
 ```
 Chúng ta cũng thêm vào các thuộc tính inline style như "border-collapse: collapse;". Nếu chúng ta không làm vậy, các phiên bản mới hơn của Outlook sẽ thêm vào một khoảng trống nhỏ giữa bảng và border của chúng ta.
 
-![examlple](https://cdn.tutsplus.com/webdesign/uploads/2013/06/2.jpg)
+![examlple2](https://cdn.tutsplus.com/webdesign/uploads/2013/06/2.jpg)
 
 ## Tạo sườn và Header
 
@@ -95,7 +95,7 @@ Chúng ta sẽ copy paste cái row của cái bảng vừa nãy mới làm thàn
  </tr>
 </table>
 ```
-![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/3.jpg)
+![example3](https://cdn.tutsplus.com/webdesign/uploads/2013/06/3.jpg)
 
 Bây giờ, ta sẽ thêm màu sắc theo mẫu thiết kế. Ta sẽ sử dụng thuộc tính `bgcolor` có sẵn của HTML để thêm màu thay vì sử dụng CSS. Luôn nhớ phải sử dụng đầy đủ 6 kí tự của mã màu hex, nó có thể không hoạt động nếu chúng ta rút gọn thành 3 kí tự.
 
@@ -119,7 +119,7 @@ Bây giờ, ta sẽ thêm màu sắc theo mẫu thiết kế. Ta sẽ sử dụn
 </table>
 ```
 
-![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/4.jpg)
+![example4](https://cdn.tutsplus.com/webdesign/uploads/2013/06/4.jpg)
 
 OK, tiếp theo ta sẽ tập trung vào row 1. Chúng ta sẽ tuỳ chỉnh padding của cell đó và thêm hình vào.
 
@@ -143,11 +143,11 @@ Chúng ta đã sử dụng inline CSS để thêm padding vào cell. Tiếp theo
 </td>
 ```
 
-![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/6.jpg)
+![example5](https://cdn.tutsplus.com/webdesign/uploads/2013/06/6.jpg)
 
 ## Tạo phần Content
 Đầu tiên, chúng ta sẽ thêm vào một chút padding ở cell giữa để tạo khoảng trống xung quanh element.
-![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/7.jpg)
+![example6](https://cdn.tutsplus.com/webdesign/uploads/2013/06/7.jpg)
 
 Tiếp theo, ta sẽ thay cái chữ Row 2 thành một cái table với 3 row. Những row này sẽ chứa nội dung chính của ta - một cho headline, một cho phần chữ giới thiệu và ta sẽ chia cái dòng cuối thành 2 cột. Chúng ta sẽ set chiều rộng của table thành 100%, chúng ta không sử dụng pixel vì sử dụng % sẽ giúp chúng ta tạo một email responsive dễ hơn. Nếu bạn sử dụng sử dụng pixel cho width với mọi element, nó có thể dẫn đến việc bạn phải thay đổi các giá trị này một cách liên tục, còn khi sử dụng % để set width cho table con, thì khi bạn muốn điều chỉnh width cho các element cha, các table con lúc này cũng sẽ được tùy chỉnh lại một cách tự động.
 
@@ -173,11 +173,11 @@ Tiếp theo, ta sẽ thay cái chữ Row 2 thành một cái table với 3 row. 
 </td>
 ```
 
-![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/8.jpg)
+![example7](https://cdn.tutsplus.com/webdesign/uploads/2013/06/8.jpg)
 
 OK, bây giờ ta sẽ thêm nội dung vào, đồng thời thêm một chút padding vào cell giữa.
 
-![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/9.jpg)
+![example8](https://cdn.tutsplus.com/webdesign/uploads/2013/06/9.jpg)
 
 ```
 <table border="1" cellpadding="0" cellspacing="0" width="100%">
@@ -220,7 +220,148 @@ Chúng ta cũng sẽ set thuộc tính `valign` với giá trị `"top"` cho c�
  </tr>
 </table>
 ```
-![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/10a.jpg)
+![example9](https://cdn.tutsplus.com/webdesign/uploads/2013/06/10a.jpg)
 
-Bây giờ, chúng ta sẽ thêm hình và nội dung vào các cột. Ta sẽ phân nội dung thành hai row. Row 1 sẽ chứa hình và row 2 sẽ chứa nội dung
+Bây giờ, chúng ta sẽ thêm hình và chữ vào các cột. Ta sẽ phân nội dung thành hai row. Row 1 sẽ chứa hình và row 2 sẽ chứa chữ. Chúng ta sẽ tiếp tục chèn tiếp một bảng khác vào các cột, vì ta không thể sử dụng các tag colspan hay rowspan. Đồng thời ta cũng sẽ thêm một chút padding vào giữa để ngăn tách hình và chữ.
+
+```
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+ <tr>
+  <td width="260" valign="top">
+   <table border="1" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+     <td>
+      <img src="images/left.gif" alt="" width="100%" height="140" style="display: block;" />
+     </td>
+    </tr>
+    <tr>
+     <td style="padding: 25px 0 0 0;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.
+     </td>
+    </tr>
+   </table>
+  </td>
+  <td style="font-size: 0; line-height: 0;" width="20">
+   &nbsp;
+  </td>
+  <td width="260" valign="top">
+   <table border="1" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+     <td>
+      <img src="images/right.gif" alt="" width="100%" height="140" style="display: block;" />
+     </td>
+    </tr>
+    <tr>
+     <td style="padding: 25px 0 0 0;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+```
+
+Ở đây, ta set width của hình = 100% so với width của cột tương ứng, sử dụng HTML. Sử dụng phần trăm trong thuộc tính width sẽ giúp template của ta responsive hơn, chúng ta chỉ cần sử dụng media queries để thay đổi width của parent element thì các element con sẽ thay đổi theo. Tuy nhiên với height ta phải để override nó bằng pixel vì style="height: auto" không hoạt động. Nên chúng ta sẽ set nó bằng pixel. 
+
+
+## Phần Footer
+
+Phù! Cuối cùng cũng đến phần cuối cùng =]. Đầu tiên, chúng ta sẽ thêm phần padding vào footer row (row cuối)
+
+```
+<td bgcolor="#ee4c50" style="padding: 30px 30px 30px 30px;">
+ Row 3
+</td>
+```
+
+![example10](https://cdn.tutsplus.com/webdesign/uploads/2013/06/14.png)
+
+Trong ô đó, ta sẽ chèn thêm một cái bẳng có 2 cột.
+
+```
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+ <tr>
+  <td>
+   Column 1
+  </td>
+  <td>
+   Column 2
+  </td>
+ </tr>
+</table>
+```
+![example11](https://cdn.tutsplus.com/webdesign/uploads/2013/06/15.png)
+Chúng ta sẽ tạo một cái table nhỏ chèn vào cột bên phải. Bảng này là nơi chứa cái social meida icon của chúng ta. Chúng ta sẽ set thuộc tính `align="right"` cho container td chứa bảng này. Đồng thời, bạn phải set `border="0"` cho những image link (để tránh các border màu xanh) và đừng quên sử dụng `display:block`.
+
+```
+<td align="right">
+ <table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+   <td>
+    <a href="http://www.twitter.com/">
+     <img src="images/tw.gif" alt="Twitter" width="38" height="38" style="display: block;" border="0" />
+    </a>
+   </td>
+   <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+   <td>
+    <a href="http://www.twitter.com/">
+     <img src="images/fb.gif" alt="Facebook" width="38" height="38" style="display: block;" border="0" />
+    </a>
+   </td>
+  </tr>
+ </table>
+</td>
+```
+
+![example12](https://cdn.tutsplus.com/webdesign/uploads/2013/06/17.png)
+
+Bây giờ ta sẽ thêm chữ vào cột bên trái. Để cho an toàn, ta sẽ thêm thuộc tính width với giá trị 75%. Còn cột bên phải sẽ có `width="25%"`.
+
+```
+<td width="75%">
+ &reg; Someone, somewhere 2013<br/>
+ Unsubscribe to this newsletter instantly
+</td>
+```
+
+Vậy là layout của chúng ta đã hoàn thành =].
+
+## Validation
+
+Ta sẽ chạy template này bằng [W3C Validator](http://validator.w3.org/) để chắc chắn không có lỗi gì.
+Nếu bạn làm theo một cách chính xác những gì mình đã chỉ, tất cả sẽ đều pass =].
+
+![example13](https://cdn.tutsplus.com/webdesign/uploads/2013/06/email-build-valid.png)
+
+Tiếp theo chúng ta sẽ chạy test bằng Litmus để đảm bảo cấu trúc email hoạt động trơn tru trên mọi email client.
+
+![example14](https://cdn.tutsplus.com/webdesign/uploads/2013/06/email-build-litmus.png)
+
+## Ok, bây giờ làm đẹp cho Text một chút nào :D
+
+Dòng đầu tiên là heading. Chúng ta sẽ sử dụng tag `<b>` để tô đậm chữ. Nếu bạn còn nhớ thì chúng ta sẽ luôn chỉnh style = HTML nếu nó có tag đó, thay vì sử dụng CSS.
+
+```
+<td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
+ <b>Lorem ipsum dolor sit amet!</b>
+</td>
+```
+
+Chúng ta sẽ tiếp tục thêm inline style sau vào các ô khác
+```
+style="color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"
+```
+
+
+Tiếp theo, ta sẽ style các chữ của footer. Chúng ta sẽ chỉnh link "unsubcribe" bằng cả CSS và HTML tag `<font>`. Sử dụng đồng thời cả hai cách sẽ giúp ta đảm bảo link này không bao giờ hiển thị dưới dạng màu xanh chết chóc (màu xấu vãi chưởng).
+
+```
+<td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px;">
+ &reg; Someone, somewhere 2013<br/>
+ <a href="#" style="color: #ffffff;"><font color="#ffffff">Unsubscribe</font></a> to this newsletter instantly
+</td>
+```
+
+![example15](https://cdn.tutsplus.com/webdesign/uploads/2013/06/20.png)
 
