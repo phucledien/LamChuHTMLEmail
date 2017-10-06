@@ -365,3 +365,34 @@ Tiếp theo, ta sẽ style các chữ của footer. Chúng ta sẽ chỉnh link 
 
 ![example15](https://cdn.tutsplus.com/webdesign/uploads/2013/06/20.png)
 
+Ok, nhìn cũng đầy đủ rồi á. Chúng ta sẽ xóa hết các border và cùng ngắm nhìn vẻ đẹp của nó =]. Tìm tất cả các thuộc tính `border="1"` và thay bằng `border="0"`
+
+![example16](https://cdn.tutsplus.com/webdesign/uploads/2013/06/21.png)
+
+Bây giờ nhìn nó có vẻ hơi trống trống =], có lẽ nên thêm viền lại cho nó. OK, hãy quay lại cái table 600px wide đầu tiên của chúng ta và thêm vào:
+
+```
+style="border: 1px solid #cccccc;"
+```
+
+bây giờ, trong nó không còn lạc trôi nữa =]. Bước cuối cùng, mình sẽ thêm vào 30px padding ở bottom của row đầu tiên trong main table để tránh cho email của ta bị cảm giác dừng đột ngột trong các mail client như Apple Mail, và 10px padding top cũng của row đó, giúp tạo một chút khoảng trống cho header của chúng ta.
+
+```
+<td style="padding: 20px 0 30px 0;">
+```
+
+![example17](https://cdn.tutsplus.com/webdesign/uploads/2013/06/23.jpg)
+
+Ok, và test lại lần cuối nào!
+
+![example18](https://cdn.tutsplus.com/webdesign/uploads/2013/06/email-build-litmus-finished.png)
+
+Nhìn cũng khá ổn.
+
+## Xong rồi á!
+
+Mà trước khi gửi mail bạn nên kiểm tra lại coi có comment vào code không. Nếu có thì xóa hết chúng đi. Một vài email client có thể bị ảnh hưởng. Tốt nhất là không nên bỏ những g ì không cần thiết vào file code của bạn.
+
+OK, bây giờ kiểm tra thêm lần cuối cùng và HTML email của bạn đã sẵn sàng ^^!
+
+
