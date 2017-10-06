@@ -220,3 +220,7 @@ Chúng ta cũng sẽ set thuộc tính `valign` với giá trị `"top"` cho c�
  </tr>
 </table>
 ```
+![example](https://cdn.tutsplus.com/webdesign/uploads/2013/06/10a.jpg)
+
+Bây giờ, chúng ta sẽ thêm hình và nội dung vào các cột. Ta sẽ phân nội dung thành hai row. Row 1 sẽ chứa hình và row 2 sẽ chứa nội dung
+
