@@ -397,6 +397,7 @@ Mà trước khi gửi mail bạn nên kiểm tra lại coi có comment vào cod
 OK, bây giờ kiểm tra thêm lần cuối cùng và HTML email của bạn đã sẵn sàng ^^!
 
 Nếu trong quá trình thực hiện, bạn gặp lỗi hay thắc mắc gì đó có thể hỏi mình bằng cách thêm issue.
+
 [Đây](https://github.com/phucledien/HTMLEmailTemplate) là source hoàn chỉnh sau khi thực hiện xong
 
 
