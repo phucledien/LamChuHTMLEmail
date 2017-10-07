@@ -6,3 +6,5 @@ Series hướng dẫn này sẽ đi từ những thứ nền tảng nhất, đ�
 
 * [Part 1 - Các khái niệm cơ bản về HTML Email](./Part1-CacKhaiNiemCoBan.md)
 * [Part 2 - Xây dựng một template HTML Email từ đầu](./Part2-XayDungTuDau.md)
+
+To be continue...
